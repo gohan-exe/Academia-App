@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "573440933724",
+    "project_id": "academia-11a3c",
+    "storage_bucket": "academia-11a3c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:573440933724:android:303100d33cecb63d990b99",
+        "android_client_info": {
+          "package_name": "br.edu.fatecpg.academia"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIxPrYgnsKlUOztV4YNrhNJ8lepjN1kw0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

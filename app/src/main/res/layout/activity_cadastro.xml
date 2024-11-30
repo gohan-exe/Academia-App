@@ -1,0 +1,57 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Nome do usuário -->
+    <EditText
+        android:id="@+id/edtNome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nome"
+        android:inputType="textPersonName"/>
+
+    <!-- E-mail do usuário -->
+    <EditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress"/>
+
+    <!-- Senha do usuário -->
+    <EditText
+        android:id="@+id/edtSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Senha"
+        android:inputType="textPassword"/>
+
+    <!-- RadioGroup para escolher o tipo de usuário -->
+    <RadioGroup
+        android:id="@+id/radioGroupTipoUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioAluno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aluno" />
+
+        <RadioButton
+            android:id="@+id/radioTreinador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Treinador" />
+    </RadioGroup>
+
+    <!-- Botão de cadastro -->
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar" />
+</LinearLayout>
