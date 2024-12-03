@@ -1,7 +1,8 @@
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     android:orientation="vertical"
     android:padding="16dp">
 
@@ -11,8 +12,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Título do Treino"
+        android:background="@drawable/edittext_background"
         android:inputType="text"
-        android:padding="12dp"/>
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0C4DE"
+        android:layout_marginBottom="12dp" />
 
     <!-- Campo de Descrição -->
     <EditText
@@ -20,9 +25,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Descrição do Treino"
-        android:inputType="text"
+        android:background="@drawable/edittext_background"
+        android:inputType="textMultiLine"
         android:padding="12dp"
-        android:layout_marginTop="8dp"/>
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0C4DE"
+        android:layout_marginBottom="16dp" />
 
     <!-- Botão de Salvar -->
     <Button
@@ -30,7 +38,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Salvar Plano"
-        android:layout_marginTop="16dp"/>
+        android:backgroundTint="@color/blue_primary"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
 
     <!-- Lista de Planos -->
     <androidx.recyclerview.widget.RecyclerView
@@ -38,7 +50,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:layout_marginTop="16dp"/>
+        android:clipToPadding="false"
+        android:paddingBottom="8dp" />
 
     <!-- Botão de Voltar -->
     <Button
@@ -46,5 +59,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Voltar"
-        android:layout_marginTop="16dp"/>
+        android:backgroundTint="@color/blue_secondary"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp" />
 </LinearLayout>

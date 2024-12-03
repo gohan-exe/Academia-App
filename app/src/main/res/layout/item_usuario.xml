@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
+    android:background="#EF0D1A66"
     app:cardCornerRadius="8dp"
     app:cardElevation="4dp">
 
@@ -18,26 +19,29 @@
             android:id="@+id/txtNomeAluno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
             android:text="Nome do Aluno"
             android:textSize="18sp"
-            android:textStyle="bold"
-            android:layout_marginBottom="8dp" />
+            android:textStyle="bold" />
 
         <!-- Email do aluno -->
         <TextView
             android:id="@+id/txtEmailAluno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             android:text="Email do Aluno"
-            android:textSize="14sp"
             android:textColor="@android:color/darker_gray"
-            android:layout_marginBottom="8dp" />
+            android:textSize="14sp" />
 
         <!-- Botão para atribuir -->
         <Button
             android:id="@+id/btnAtribuirPlano"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Atribuir" />
+            android:layout_marginTop="8dp"
+            android:text="Atribuir"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#2196F3"/>
     </LinearLayout>
 </androidx.cardview.widget.CardView>

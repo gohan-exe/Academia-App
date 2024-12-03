@@ -2,38 +2,58 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
     android:orientation="vertical"
+    android:gravity="center"
     android:padding="16dp">
 
+    <!-- Campo de Email -->
     <EditText
         android:id="@+id/edtEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"
-        android:inputType="textEmailAddress" />
+        android:background="@drawable/edittext_background"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0C4DE"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
 
+    <!-- Campo de Senha -->
     <EditText
         android:id="@+id/edtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Senha"
-        android:inputType="textPassword" />
+        android:background="@drawable/edittext_background"
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0C4DE"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp" />
 
+    <!-- Botão de Login -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Entrar" />
+        android:text="Entrar"
+        android:backgroundTint="@color/blue_primary"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp" />
 
+    <!-- Texto de Cadastro -->
     <TextView
         android:id="@+id/txvCadastrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="Não possui Login? Clique aqui para cadastrar"
+        android:layout_marginTop="16dp"
+        android:text="Não possui login? Cadastre-se aqui"
         android:textColor="@android:color/holo_blue_light"
-        android:paddingTop="16dp"
+        android:textStyle="bold"
         android:clickable="true"
-        android:focusable="true" />
-
+        android:focusable="true"
+        android:layout_gravity="center" />
 </LinearLayout>

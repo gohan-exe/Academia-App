@@ -4,43 +4,66 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_gradient"
+    android:padding="16dp"
     tools:context=".views.EditarPlanoActivity">
 
+    <!-- Título da página -->
+    <TextView
+        android:id="@+id/txtTituloEdtPlano"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Editar Plano de Treino"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp" />
+
     <!-- Campo de entrada para o título do plano -->
-    <android.widget.EditText
+    <EditText
         android:id="@+id/edtTituloPlano"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Título do plano"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Título do Plano"
+        android:background="@drawable/edittext_background"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0C4DE"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/txtTituloEdtPlano"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
 
     <!-- Campo de entrada para a descrição do plano -->
-    <android.widget.EditText
+    <EditText
         android:id="@+id/edtDescricaoPlano"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Descrição do plano"
-        app:layout_constraintTop_toBottomOf="@+id/edtTituloPlano"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Descrição do Plano"
+        android:background="@drawable/edittext_background"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#B0C4DE"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/edtTituloPlano"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="24dp" />
 
     <!-- Botão para salvar as alterações no plano -->
-    <android.widget.Button
+    <Button
         android:id="@+id/btnSalvarPlano"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/blue_primary"
         android:text="Salvar Alterações"
-        app:layout_constraintTop_toBottomOf="@+id/edtDescricaoPlano"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:padding="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginTop="32dp"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

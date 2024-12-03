@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import br.edu.fatecpg.academia.databinding.ActivityEscolhaTipoBinding
-import com.google.firebase.firestore.FirebaseFirestore
 import com.github.mikephil.charting.charts.BarChart
 import com.github.mikephil.charting.components.Legend
 import com.github.mikephil.charting.components.LegendEntry
@@ -14,6 +13,7 @@ import com.github.mikephil.charting.data.BarData
 import com.github.mikephil.charting.data.BarDataSet
 import com.github.mikephil.charting.data.BarEntry
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.Query
 
 class EscolhaTipoActivity : AppCompatActivity() {
@@ -36,10 +36,12 @@ class EscolhaTipoActivity : AppCompatActivity() {
             // Mostrar apenas a opção de Aluno
             binding.btnAluno.visibility = View.VISIBLE
             binding.btnTreinador.visibility = View.INVISIBLE
+            binding.txvTitulo.text = "Seu Redimento"
         } else if (userType == "Treinador") {
             // Mostrar apenas a opção de Treinador
             binding.btnTreinador.visibility = View.VISIBLE
             binding.btnAluno.visibility = View.INVISIBLE
+            binding.txvTitulo.text = "Todas as atribuições"
         }
 
         // Configurar os botões
