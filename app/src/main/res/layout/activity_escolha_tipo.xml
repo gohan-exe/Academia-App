@@ -29,7 +29,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ver Atribuições"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:backgroundTint="@color/blue_primary" />
 
     <!-- Botão Treinador -->
     <Button
@@ -37,7 +38,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Ver Planos de Treino"
-        android:visibility="gone" />
+        android:visibility="gone"
+        android:backgroundTint="@color/blue_primary" />
 
     <!-- Botão Voltar -->
     <Button
@@ -45,6 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Voltar" />
+        android:text="Voltar"
+        android:backgroundTint="@color/blue_primary" />
 
 </LinearLayout>

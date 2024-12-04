@@ -23,36 +23,41 @@
         android:layout_marginBottom="24dp" />
 
     <!-- Campo de entrada para o título do plano -->
+
+    <!-- Campo de entrada para a descrição do plano -->
+
+    <!-- Botão para salvar as alterações no plano -->
+
     <EditText
         android:id="@+id/edtTituloPlano"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Título do Plano"
+        android:layout_marginTop="24dp"
         android:background="@drawable/edittext_background"
+        android:hint="Título do Plano"
+        android:padding="12dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#B0C4DE"
-        android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/txtTituloEdtPlano"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="16dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTituloEdtPlano" />
 
-    <!-- Campo de entrada para a descrição do plano -->
     <EditText
         android:id="@+id/edtDescricaoPlano"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:hint="Descrição do Plano"
+        android:layout_marginTop="20dp"
         android:background="@drawable/edittext_background"
+        android:hint="Descrição do Plano"
+        android:padding="12dp"
         android:textColor="#FFFFFF"
         android:textColorHint="#B0C4DE"
-        android:padding="12dp"
-        app:layout_constraintTop_toBottomOf="@id/edtTituloPlano"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="24dp" />
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtTituloPlano" />
 
-    <!-- Botão para salvar as alterações no plano -->
     <Button
         android:id="@+id/btnSalvarPlano"
         android:layout_width="match_parent"
